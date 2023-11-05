@@ -1,5 +1,6 @@
 ;(function () {
 	
+
 	'use strict';
 
 	var isMobile = {
@@ -35,6 +36,7 @@
 	};
 
 	// Parallax
+	
 	var parallax = function() {
 		$(window).stellar();
 	};
@@ -74,6 +76,11 @@
 
 		} , { offset: '85%' } );
 	};
+
+
+
+
+
 
 
 
