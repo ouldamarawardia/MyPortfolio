@@ -80,10 +80,6 @@
 
 
 
-
-
-
-
 	var goToTop = function() {
 
 		$('.js-gotop').on('click', function(event){
@@ -150,6 +146,15 @@
 		parallax();
 		// pieChart();
 		skillsWayPoint();
+
+		// Ajouter la logique de la fenêtre contextuelle
+		var confirmationButton = document.getElementById('confirmationButton');
+		confirmationButton.addEventListener('click', function() {
+			if (confirm("Merci pour votre message. Nous avons bien reçu votre demande et nous vous répondrons sous peu. Cliquez sur OK pour continuer.")) {
+				// Rediriger ou effectuer d'autres actions si nécessaire
+				window.location.href = "index.html"; // Rediriger vers la page d'accueil
+			}
+		});
 	});
 
 
